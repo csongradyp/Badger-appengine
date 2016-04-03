@@ -16,6 +16,7 @@ public @interface EventTrigger {
 
     /**
      * Name of event to trigger.
+     * @return event identifiers
      */
     String[] events() default {};
 

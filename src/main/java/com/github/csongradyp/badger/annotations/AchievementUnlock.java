@@ -5,7 +5,6 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-
 /**
  * Annotation to unlock the given achievement and trigger achievement unlocked event.
  */
@@ -15,6 +14,7 @@ public @interface AchievementUnlock {
 
     /**
      * IDs of achievement to unlock.
+     * @return ID's of the achievements to unlock
      */
     String[] achievements() default {};
 
